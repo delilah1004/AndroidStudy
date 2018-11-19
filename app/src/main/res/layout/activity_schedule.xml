@@ -104,19 +104,23 @@
         android:background="@drawable/borderline_full"
         android:text="오전 10 : 00"
         android:textSize="13sp"
+        android:textColor="#ffffff"
         android:paddingLeft="10dp"
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
         />
 
-    <TextView
-        android:id="@+id/submit"
+    <Button
+        android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/edit4"
         android:layout_below="@+id/edit4"
         android:layout_marginTop="40dp"
         android:padding="6dp"
-        android:text="제출"/>
+        android:text="Submit"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:background="@drawable/buttonshape"/>
 
 </RelativeLayout>
