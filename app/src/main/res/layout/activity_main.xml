@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12">
 
-</RelativeLayout>
+    <EditText
+        android:layout_weight="1.5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TableLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:background="@drawable/borderline_tablelayout"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+            <Button
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/culture"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/borderline_tablelayout"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/volunteer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/academic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
